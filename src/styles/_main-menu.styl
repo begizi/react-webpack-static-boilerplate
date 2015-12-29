@@ -1,0 +1,143 @@
+.main-menu-wrap
+  position: fixed
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  visibility: hidden
+  opacity: 0
+  background: mojo-green
+  transition: all .3s ease
+
+  @media (max-width: small-screen)
+    padding-top: 0
+
+.menu-logo
+  position: absolute
+  top: -157px
+
+  @media (max-width: small-screen)
+    display: none
+
+.main-menu
+  margin: hero-space 0 spacing-block-large 0
+  color: #fff
+  position: relative
+
+  @media (max-width: small-screen)
+    margin: 0
+    margin-bottom: 0
+    padding: spacing-block * 3 0
+
+  a
+    color: #fff
+    border: none
+    transition: all .3s ease
+
+    &.get-directions
+      border-bottom: 1px dotted #fff
+
+    &:hover
+      color: rgba(white, .8)
+
+      .location-name
+        color: rgba(white, .8)
+
+  .timestamp
+    color: rgba(white, .5)
+
+  .menu-primary
+    padding-bottom: spacing-block-large
+
+    @media (max-width: small-screen)
+      padding-bottom: spacing-block * 2
+  
+  .primary-nav,
+  .blog-feed
+    width: col-1-4
+    float: left
+
+    @media (max-width: small-screen)
+      width: 100%
+      float: none
+  
+  .primary-nav-item,
+  .secondary-nav-item
+    display: block
+    font-size: 32px
+    line-height: 48px
+    margin-bottom: spacing-block-small
+    letter-spacing: -.055em
+    font-family: primary-sans
+    font-weight: normal
+    
+    @media (max-width: small-screen)
+      text-align: center
+      
+  .secondary-nav-item
+    color: rgba(white, .5)
+
+  .blog-feed
+    width: col-3-4
+    margin-top: spacing-block-small
+
+    @media (max-width: small-screen)
+      margin-top: spacing-block * 2
+      border-top: 1px solid #fff
+      padding-top: spacing-block * 2
+      width: 100%
+
+  .blog-feed-title
+    color: rgba(white, .5)
+
+  .blog-feed-item
+    margin-bottom: spacing-block * 2
+
+    @media(max-width: small-screen)
+      margin-bottom: spacing-block
+
+    &:last-child
+      margin-bottom: 0
+
+  .blog-feed-item-title
+    font-family: primary-sans
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: -.055em
+    
+    @media (max-width: small-screen)
+      font-size: 18px
+      line-height: 28px
+    
+  .locations-footer
+    border-top: 1px solid #fff
+    padding: spacing-block 0
+    
+    .location-name
+      color: #fff
+  
+  .header
+    margin-bottom: 0
+
+.cssanimations
+  .primary-nav-item,
+  .secondary-nav-item
+    opacity: 0
+
+.menu-open
+
+  .menu-logo
+    opacity: 1
+
+  .main-menu-wrap
+    visibility: visible
+    overflow-y: scroll
+    opacity: 1
+    z-index: 20
+    -webkit-overflow-scrolling: touch
+
+  .primary-nav-item,
+  .secondary-nav-item
+    for items in 1..7
+      &:nth-child({items})
+        animation: slideFade .5s .1s*items 1 forwards

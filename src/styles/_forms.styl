@@ -1,0 +1,119 @@
+form
+  margin: spacing-block * 2 0
+  
+  @media (max-width: small-screen)
+    margin: spacing-block 0
+
+  .button
+    margin-top: spacing-block * 2
+
+input[type='submit']
+  -webkit-appearance: none
+
+fieldset
+  margin: 0
+  padding: 0
+
+legend
+  display: block
+  font-size: 24px
+  line-height: 32px
+  margin: 0 spacing-block-small spacing-block * 2 spacing-block-small
+  letter-spacing: -.055em
+
+  @media (max-width: small-screen)
+    font-size: 18px
+    line-height: 28px
+    margin: 0 spacing-block-small spacing-block spacing-block-small
+
+input,
+select,
+textarea
+  font-size: 20px
+  line-height: 40px
+  font-family: primary-sans
+  margin: 0 0 spacing-block 0
+  letter-spacing: -.055em
+  height: 40px
+  transition: all .3s ease
+  padding: 0
+
+  @media (max-width: small-screen)
+    font-size: font-size-base - 2
+
+  &:focus
+    border-color: rgba(white, .5)
+
+::-webkit-input-placeholder
+  color: rgba(white, .5)
+
+input:focus::-webkit-input-placeholder
+  color: rgba(white, .25)
+
+.input-text,
+textarea
+  background: none
+  border: none
+  border-bottom: 1px solid rgba(white, .25)
+  width: 100%
+  outline: none
+
+textarea
+  min-height: 120px
+  line-height: 32px
+
+.input-radio
+  display: none
+
+.input-radio + label
+  margin: 0 spacing-block spacing-block 0
+  display: block
+  width: 100%
+  font-size: 12px
+  letter-spacing: .0325em
+  font-family: primary-sans
+  text-transform: uppercase
+  font-weight: bold
+  border: none
+  line-height: 12px
+  padding: 13px spacing-block
+  border-radius: 4px
+  transition: all .3s ease
+  border: 1px solid rgba(white, .25)
+  text-align: center
+  color: rgba(white, .5)
+
+  &:hover
+    cursor: pointer
+    border-color: rgba(white, .5)
+    color: rgba(white, .8)
+
+.input-radio:checked + label
+  border-color: white
+  color: #fff
+
+@keyframes pong-loader-paddle-1
+  0% { box-shadow: inset mojo-green 0 5px 0 0, inset mojo-green 0 -35px 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+  25% { box-shadow: inset mojo-green 0 15px 0 0, inset mojo-green 0 -25px 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+  50% { box-shadow: inset mojo-green 0 0 0 0, inset mojo-green 0 -40px 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+  62.5% { box-shadow: inset mojo-green 0 10px 0 0, inset mojo-green 0 -30px 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+  75% { box-shadow: inset mojo-green 0 40px 0 0, inset mojo-green 0 0 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+  100% { box-shadow: inset mojo-green 0 5px 0 0, inset mojo-green 0 -35px 0 0, inset mojo-green -3px 0 0 0, inset #fff -10px 0 0 0 }
+
+@keyframes pong-loader-paddle-2
+  0% { box-shadow: inset mojo-green 0 0 0 0, inset mojo-green 0 -40px 0 0, inset mojo-green 3px 0 0 0, inset #fff -10px 0 0 0 }
+  50% { box-shadow: inset mojo-green 0 30px 0 0, inset mojo-green 0 -10px 0 0, inset mojo-green 3px 0 0 0, inset #fff -10px 0 0 0 }
+  62.5% { box-shadow: inset mojo-green 0 40px 0 0, inset mojo-green 0 0 0 0, inset mojo-green 3px 0 0 0, inset #fff -10px 0 0 0 }
+  75% { box-shadow: inset mojo-green 0 20px 0 0, inset mojo-green 0 -20px 0 0, inset mojo-green 3px 0 0 0, inset #fff -10px 0 0 0 }
+  100% { box-shadow: inset mojo-green 0 0 0 0, inset mojo-green 0 -40px 0 0, inset mojo-green 3px 0 0 0, inset #fff -10px 0 0 0 }
+
+.pong-loader
+  &:not(:required)
+    background: mojo-green
+    box-shadow: main-spinner-shadow
+
+    &:before
+      box-shadow: main-spinner-shadow
+
+    &:after
+      background: #fff

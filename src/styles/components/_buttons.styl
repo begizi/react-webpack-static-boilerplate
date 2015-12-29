@@ -1,0 +1,64 @@
+.button
+  display: inline-block
+  font-size: 12px
+  letter-spacing: .0325em
+  font-family: primary-sans
+  text-transform: uppercase
+  font-weight: bold
+  border: none
+  line-height: normal
+  background: none
+  padding: 12px spacing-block
+  border-radius: 4px
+  text-align: center
+  transition: all .3s ease
+
+  &:hover
+    cursor: pointer
+
+input[type='submit']
+  line-height: 0
+
+.button-primary
+  border: 2px solid mojo-green
+  color: mojo-green
+
+  &:hover
+    color: #fff
+    background: lighten(mojo-green, 2%)
+
+.button-primary-inverse
+  border: 2px solid #fff
+  color: #fff
+
+  &:hover
+    background: #fff
+    color: mojo-green
+
+.button-primary-solid
+  border: 2px solid mojo-green
+  background: mojo-green
+  color: white
+
+  &:hover
+    background: lighten(mojo-green, 2%)
+
+.button-play
+  background: url('https://mojotech-static.s3.amazonaws.com/m4/play-arrow.png') no-repeat center
+  background-size: 72px 72px
+  border-radius: 50%
+  display: inline-block
+  width: 72px
+  height: 72px
+  border: 2px solid rgba(black, .15)
+  transition: opacity .3s ease
+  opacity: .9
+  position: relative
+  cursor: pointer
+
+  &:hover
+    opacity: 1
+
+.button-label
+  position: relative
+  z-index: 16

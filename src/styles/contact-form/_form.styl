@@ -1,0 +1,36 @@
+*
+  color: #fff
+
+.button
+  @media (max-width: small-screen)
+    width: 100%
+
+.error
+  input, textarea, label
+    border-color: alert
+  input, textarea
+    background: rgba(alert, 0.2)
+    color: white
+    padding-left: 10px
+  label
+    color: rgba(alert, 0.5)
+
+.radio-set
+  margin: spacing-block * 2 (-(spacing-block-small)) 0 (-(spacing-block-small))
+
+  @media (max-width: small-screen)
+    margin: spacing-block-small (-(spacing-block-small)) 0 (-(spacing-block-small))
+
+  .form-field
+    width: col-1-3
+    float: left
+    padding: 0 10px
+
+    @media (max-width: small-screen)
+      width: col-1-2
+
+  .input-radio + label
+
+    @media (max-width: small-screen)
+      padding: 13px spacing-block-small
+

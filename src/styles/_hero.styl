@@ -1,0 +1,99 @@
+.hero
+  text-align: center
+
+  .small-headline
+    margin-bottom: spacing-block-small
+
+.hero, .thanks-content
+  padding: hero-space 0
+  color: mojo-green
+  position: relative
+  z-index: 10
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+
+  @media (max-height: med-screen-vert)
+    padding: hero-space-med 0
+
+  @media (max-width: small-screen)
+    margin-top: 0
+    padding: spacing-block-large + spacing-block * 3 0 spacing-block-large 0
+
+  .button
+    margin-top: spacing-block * 2
+    position: relative
+    z-index: 16
+
+  .button-play
+    animation: 5s beat infinite cubic-bezier(.645, .045, .355, 1)
+    z-index: 16
+    margin-top: spacing-block * 4
+
+  .button-label
+    text-shadow: 0 1px 1px rgba(black, .15)
+    display: block
+
+.hero-headline
+  margin: 0
+  font-size: 58px
+  line-height: 68px
+  max-width: center-col-width
+  margin: 0 auto
+  letter-spacing: -.045em
+  position: relative
+  z-index: 15
+  text-shadow: 0 1px 1px rgba(black, .15)
+
+  @media (max-width: small-screen)
+    font-size: 38px
+    line-height: 48px
+
+  &.human-tone
+    font-size: 52px
+    line-height: 60px
+    font-family: primary-serif
+
+    @media (max-width: small-screen)
+      font-size: 32px
+      line-height: 38px
+
+.hero-headline-large
+  .hero-headline
+    font-size: 150px
+    line-height: 160px
+    max-width: 100%
+
+    @media(max-width: 900px)
+      font-size: 58px
+      line-height: 68px
+
+  .hero-subhead
+    margin-top: 0
+
+.hero-subhead
+  position: relative
+  z-index: 15
+  line-height: 24px
+  margin-top: spacing-block-small
+
+  .location-contact
+    display: block
+
+  a
+    color: #fff
+    border-color: #fff
+
+.no-videoautoplay
+  .video-label
+    display: none
+
+.videoautoplay
+  .video-label
+    position: absolute
+    left: 0
+    bottom: 10px
+    width: 100%
+    z-index: 15
+    font-size: 12px
+    color: rgba(white, .9)

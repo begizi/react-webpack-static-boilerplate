@@ -1,0 +1,29 @@
+.home
+  @import _hero
+  @import _intro
+  @import _popover
+
+  .content
+    padding-bottom: 0
+
+  .our-background
+    background-image: linear-gradient(white, #f0f0f0)
+
+.our-press
+  padding-bottom: spacing-block * 2
+
+  p
+    margin-bottom: 0
+
+  .small-headline
+    margin-top: spacing-block * 2
+    color: darken(light-gray, 15%)
+    text-align: center
+
+    @media(max-width: small-screen)
+      margin-top: spacing-block * 2
+
+  .press-logos
+    image-rendering: -webkit-optimize-contrast
+    margin: spacing-block * 2 auto
+    opacity: .85

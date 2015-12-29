@@ -1,0 +1,68 @@
+.work-item-info
+  max-width: col-1-3
+
+  @media (max-width: med-screen-landscape)
+    max-width: col-1-2
+    padding: 0
+
+  @media (max-width: small-screen)
+    max-width: 100%
+    float: none
+
+  .work-desc
+    margin-bottom: spacing-block
+
+.work-item
+  border-bottom: 1px solid light-gray
+  overflow: hidden
+  background-position: center
+  background-repeat: no-repeat
+  background-size: contain
+  height: 500px
+  position: relative
+  display: block
+  transition: background-color .3s ease
+
+  @media(max-width: small-screen)
+    background-size: cover
+    height: 300px
+
+  .work-item-content
+    position: relative
+    top: 50%
+    transform: translateY(-50%)
+    z-index: 10
+
+  &.groove
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/groove/groove-work-index.png')
+
+  &.pinchme
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/pinchme/pinchme-work-index.png')
+
+  &.teespring
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/teespring/teespring-work-index.png')
+
+  &.riskio
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/riskio/riskio-work-index.png')
+
+  &.randomrun
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/randomrun/rr-work-index.png')
+    background-position: bottom right
+
+  &.united-way
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/united-way/uw-work-index.png')
+
+  &.dockwa
+    background-image: url('//mojotech-static.s3.amazonaws.com/m4/work/dockwa/dockwa-work-index.png')
+    background-position: bottom right
+
+  &.overlay
+    &:after
+      display: none
+      @media(max-width: small-screen)
+        display: block
+        background: rgba(white, .85)
+
+  &:hover
+    cursor: pointer
+    background-color: #fcfcfc

@@ -1,0 +1,42 @@
+.job-listing
+  position: relative
+  padding: spacing-block * 2 0
+  border-bottom: 1px solid light-gray
+
+  &:last-child
+    border-bottom: none
+
+  @media (max-width: small-screen)
+    text-align: center
+    padding: spacing-block 0
+
+  .job-title
+    margin: 0 200px 0 0
+
+    @media(max-width: small-screen)
+      margin: 0
+
+  .job-location
+    margin-right: 200px
+
+    @media(max-width: small-screen)
+      margin: 0
+
+  .button
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -(spacing-block)
+
+    @media (max-width: small-screen)
+      position: relative
+      top: auto
+      right: auto
+      margin-top: spacing-block-small
+
+.job-title
+  margin: 0 0 spacing-block-small 0
+  color: darken(med-gray, 40%)
+
+.job-location
+  margin: 0

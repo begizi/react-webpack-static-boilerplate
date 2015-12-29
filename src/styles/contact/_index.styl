@@ -1,0 +1,74 @@
+.contact
+  @import _hero
+
+  .work-together
+    border: none
+    padding: 0
+    margin: spacing-block-large auto
+
+    @media(max-width: small-screen)
+      margin: spacing-block * 2 auto
+
+  .contact-jobs
+    margin-top: spacing-block-large
+    text-align: center
+
+    a
+      display: inline-block
+
+    @media(max-width: small-screen)
+      margin-top: spacing-block * 2
+
+  .content
+    padding-top: 0
+    padding-bottom: 0
+
+  .general-inquiries
+    text-align: center
+    margin-top: spacing-block
+    font-size: 14px
+    line-height: normal
+
+    a
+      display: inline-block
+
+.social-connections
+  margin: spacing-block * 3 auto spacing-block-large auto
+  text-align: center
+
+  a
+    padding: spacing-block-small
+    border: 2px solid mojo-green
+    border-radius: 50%
+    display: inline-block
+    margin: 0 spacing-block-small
+
+    .social-contact
+      width: 32px
+      height: 32px
+      background: url('https://mojotech-static.s3.amazonaws.com/m4/sprites/icons.png')
+      background: none, url('https://mojotech-static.s3.amazonaws.com/m4/sprites/icons.svg')
+      background-repeat: no-repeat
+      box-sizing: content-box
+      transition: background-color .1s ease
+
+      &.github-icon
+        background-position: 0 -64px
+
+      &.dribbble-icon
+        background-position: 0 0
+
+      &.twitter-icon
+        background-position: 0 -128px
+
+    &:hover
+      background-color: mojo-green
+
+      .github-icon
+        background-position: 0 -96px
+
+      .dribbble-icon
+        background-position: 0 -32px
+
+      .twitter-icon
+        background-position: 0 -160px

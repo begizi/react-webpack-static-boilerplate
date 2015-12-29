@@ -1,0 +1,58 @@
+.labs
+  @import _hero
+  @import _open-source
+
+  .content
+    padding-bottom: 0
+
+  .work-item
+    &:hover
+      background: transparent
+      cursor: initial
+
+  .labs-allocate
+    border-bottom: 1px solid light-gray
+    margin-bottom: spacing-block-large
+
+    @media(max-width: small-screen)
+      margin-bottom: spacing-block * 2
+
+    .work-item
+      border: none
+      margin-bottom: 0
+
+  .labs-jeet
+    margin-top: spacing-block-large
+    padding-top: spacing-block-large
+    border-top: 1px solid light-gray
+
+    @media(max-width: small-screen)
+      margin-top: spacing-block * 2
+      padding-top: spacing-block * 2
+
+    .work-item
+      border: none
+      height: 432px
+      margin-bottom: 0
+
+  .work-item-media
+    position: absolute
+    right: 0
+    text-align: center
+    width: 60%
+
+    a
+      display: block
+      border: none
+
+    @media (max-width: med-screen-landscape)
+      width: 45%
+
+    @media(max-width: small-screen)
+      position: relative
+      right: auto
+      margin: spacing-block * 2 auto 0 auto
+      width: 100%
+
+    img
+      margin: 0 auto

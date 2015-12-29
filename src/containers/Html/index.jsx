@@ -16,7 +16,7 @@ export default class Html extends React.Component {
           {meta}
           <link rel="stylesheet" href="/main.css" />
         </head>
-        <body>
+        <body className="home">
           <div id="content" dangerouslySetInnerHTML={appHtml} />
           <script type="text/javascript" src="/app.js" charSet="utf-8"></script>
         </body>

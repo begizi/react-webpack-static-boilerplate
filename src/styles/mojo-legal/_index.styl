@@ -1,0 +1,106 @@
+.mojo
+  @import _hero
+
+  .intro-copy
+    &:after
+      display: none
+
+  ol
+    list-style: decimal
+
+    p
+      margin-bottom: spacing-block-small
+
+  .content
+    padding-top: 140px
+    padding-bottom: 500px
+    position: relative
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/welcome/bron-bikes.jpg')
+    background-position: bottom
+    background-size: contain
+    background-repeat: no-repeat
+
+    @media(max-width: small-screen)
+      padding-top: spacing-block * 3
+      padding-bottom: spacing-block-large * 2
+
+  .span-sections
+    position: absolute
+    top: -80px
+    left: 0
+    width: 100%
+    z-index: 20
+
+    @media(max-width: med-screen-portrait)
+      top: -55px
+
+    @media(max-width: small-screen)
+      top: -35px
+
+  .what-is-mojo
+    margin-top: spacing-block-large
+    
+    @media(max-width: small-screen)
+      margin-top: spacing-block * 2
+
+  .development-by-design
+
+    img
+      margin: 0 auto
+
+    #mojo-m
+      fill-opacity: 0
+
+  .copyright
+    font-size: 14px
+    color: rgba(white, .8)
+
+  .framed-intro
+    position: relative
+
+    .small-headline
+      color: rgba(med-gray, .6)
+      position: absolute
+      top: 130px
+      width: 100%
+
+      @media(max-width: small-screen)
+        top: 80px
+
+    .icon-pine-hex
+      position: absolute
+      top: 70px
+      left: 50%
+      margin-left: -30px
+      width: 60px
+      height: 50px
+      background-image: url('https://mojotech-static.s3.amazonaws.com/m4/welcome/pine-hex.png')
+      background-position: center
+      background-size: 29px 43px
+      background-repeat: no-repeat
+      background-color: #ffe61f
+
+      @media(max-width: small-screen)
+        top: 25px
+        background-color: #fde700
+
+    &:after,
+    &:before
+      width: 60%
+      height: 1px
+      background: med-gray
+      position: absolute
+      top: 100px
+      left: 20%
+      content: ''
+
+      @media(max-width: small-screen)
+        top: 60px
+
+    &:after
+      top: auto
+      bottom: -80px
+
+      @media(max-width: small-screen)
+        top: auto
+        bottom: 10px

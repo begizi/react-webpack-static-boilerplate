@@ -1,0 +1,100 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+legend
+  font-family: primary-sans
+  font-weight: normal
+
+h2
+  color: mojo-green
+  font-size: 32px
+  line-height: 48px
+  margin: 0 0 spacing-block * 2 0
+  letter-spacing: -.055em
+
+  @media (max-width: small-screen)
+    font-size: 24px
+    line-height: 34px
+    margin-bottom: spacing-block
+
+h3
+  font-size: 24px
+  line-height: 32px
+  margin: 0 0 spacing-block-small 0
+  letter-spacing: -.055em
+
+  @media (max-width: small-screen)
+    font-size: 18px
+    line-height: 28px
+
+h3,
+h4,
+h5,
+h6,
+blockquote
+  color: darken(med-gray, 40%)
+
+p
+  margin-bottom: spacing-block * 2
+  line-height: line-height-base
+
+  @media (max-width: small-screen)
+    margin-bottom: spacing-block
+    line-height: line-height-base - 6
+
+blockquote
+  margin:spacing-block-large 0
+
+  @media (max-width: med-screen-portrait)
+    margin: spacing-block * 2 0
+
+  p
+    font-size: 32px
+    line-height: 48px
+    margin: 0 0 spacing-block * 2 0
+    letter-spacing: -.055em
+
+    @media (max-width: small-screen)
+      font-size: 24px
+      line-height: 34px
+
+cite
+  margin-top: spacing-block
+  font-size: font-size-base
+  color: darken(light-gray, 15%)
+  display: block
+  letter-spacing: normal
+
+  @media(max-width: small-screen)
+    font-size: 12px
+
+.caption
+  max-width: small-col-width
+  margin: 0 auto
+  font-family: primary-serif
+  font-size: 14px
+  line-height: 24px
+  text-align: center
+  color: lighten(med-gray, 40%)
+
+  .caption-lead-in
+    display: inline-block
+    margin-right: 5px
+    color: darken(med-gray, 40%)
+
+.section-headline
+  font-family: primary-serif
+  font-size: 150px
+  line-height: 1em
+  letter-spacing: -.045em
+  color: rgba(black, .1)
+  text-align: center
+
+  @media(max-width: med-screen-portrait)
+    font-size: 100px
+
+  @media(max-width: small-screen)
+    font-size: 58px

@@ -1,0 +1,11 @@
+.hero
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/building-apps-at-mojotech.jpg')
+  background-position: bottom
+
+  @media (max-height: med-screen-vert)
+    padding: hero-space-med + 50px 0 hero-space-med - 50px 0
+
+  @media (max-width: small-screen)
+    background-position: bottom right
+    margin-top: 0
+    padding: spacing-block-large + spacing-block * 3 0 spacing-block-large 0

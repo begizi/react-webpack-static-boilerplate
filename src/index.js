@@ -5,7 +5,9 @@ import {Router} from 'react-router';
 import Routes from './routes';
 import Html from 'containers/Html';
 
-// Client Only Code
+import 'styles/master.styl';
+
+//Client Only Code
 if (typeof document !== 'undefined') {
   let createBrowserHistory = require('history/lib/createBrowserHistory');
   let browserHistory = createBrowserHistory();

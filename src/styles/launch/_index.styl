@@ -1,0 +1,43 @@
+.launch
+  @import _hero
+
+  .intro
+    .media
+      margin-top: 0
+      
+  .service-offering
+    padding-bottom: spacing-block-large
+    margin-bottom: spacing-block-large
+    border-bottom: 1px solid light-gray
+    
+    @media(max-width: small-screen)
+      padding-bottom: spacing-block
+      margin-bottom: spacing-block * 2
+      
+    &.last
+      border-bottom: none
+      margin-bottom: 0
+      padding-bottom: 0
+      
+.pricing
+  margin-top: spacing-block * 2
+  
+  .price
+    display: inline-block
+    margin-right: spacing-block * 2
+    
+    @media(max-width: small-screen)
+      padding-bottom: spacing-block
+  
+  .small-headline
+    color: darken(light-gray, 15%)
+    margin-bottom: spacing-block-small
+    
+  .price-amount
+    color: mojo-green
+    font-family: primary-sans
+    font-size: 32px
+    letter-spacing: -.055em
+    
+  .price-label
+    font-size: 12px

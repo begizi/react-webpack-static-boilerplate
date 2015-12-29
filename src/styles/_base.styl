@@ -1,0 +1,398 @@
+html
+  position: relative
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  font-family: primary-serif
+  color: med-gray
+  background-color: lighten(light-gray, 10%)
+  font-size: font-size-base
+  line-height: line-height-base
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  @media (max-width: small-screen)
+    font-size: font-size-base - 4
+    line-height: line-height-base - 6
+
+*
+  box-sizing: border-box
+  -moz-box-sizing: border-box
+  -webkit-box-sizing: border-box
+
+sup
+  vertical-align: top
+  font-size: 0.6em
+
+::selection
+  background-color: mojo-green
+  color: white
+
+.clearfix:before,
+.clearfix:after
+  content: '\0020'
+  display: block
+  height: 0
+  overflow: hidden
+
+.clearfix:after
+  clear: both
+
+.clearfix
+  zoom: 1
+
+a
+  color: med-gray
+  text-decoration: none
+  border-bottom: 1px dotted med-gray
+
+  &.media-link
+    border: none
+
+iframe.mojo-frame
+  overflow: hidden
+  height: 100%
+  position: absolute
+  width: 100%
+  top: 0
+  left: 0
+
+.mojo-green
+  color: mojo-green
+
+img
+  max-width: 100%
+  height: auto
+  margin: spacing-block-large auto
+  display: block
+
+  &.intro-media
+    margin: 0 auto spacing-block * 2 auto
+
+    @media(max-width: small-screen)
+      margin-bottom: spacing-block-small
+
+  @media (max-width: small-screen)
+    margin: spacing-block * 2 auto
+
+.media-with-caption
+  margin: spacing-block-large auto
+
+  img
+    margin: 0 auto spacing-block-small auto
+
+  @media (max-width: small-screen)
+    margin: spacing-block * 2 auto
+
+img.full-bleed
+  width: 100%
+  margin: 0
+
+img.avatar
+  border-radius: 50%
+  border: 1px solid darken(light-gray, 15%)
+
+blockquote
+  text-align: center
+
+  cite
+    line-height: 32px
+  img
+    max-height: 50px
+    display: block
+    margin: 0 auto spacing-block-small auto
+    vertical-align: bottom
+
+.left
+  float: left
+
+.right
+  float: right
+
+.col
+  float: left
+
+.inline-cta
+  display: inline-block
+  margin-left: spacing-block-small
+  border: none
+  color: mojo-green
+
+.global-notification
+  position: fixed
+  top: 0
+  right: -25px
+  z-index: 999
+  transition: all .3s ease
+
+  @media (max-width: small-screen)
+    display: none
+
+  img
+    margin: 0
+
+  &:hover
+    right: 0
+
+.overlay
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    content: ''
+    background: rgba(black, .15)
+
+  &.overlay-light
+    &:after
+      background: rgba(white, .5)
+
+  &.overlay-mojo
+    &:after
+      background: rgba(mojo-green, .85)
+
+.inner
+  padding: 0 spacing-block-large
+  max-width: max-width
+  margin: 0 auto
+
+  @media (max-width: med-screen-portrait)
+    padding: 0 spacing-block * 2
+
+  @media (max-width: small-screen)
+    padding: 0 spacing-block
+
+.small-headline
+  font-family: primary-sans
+  margin-bottom: spacing-block * 2
+  font-size: 12px
+  letter-spacing: .0325em
+  text-transform: uppercase
+  font-weight: bold
+  line-height: normal
+
+  @media (max-width: small-screen)
+    margin-bottom: spacing-block
+
+.body-content
+  max-width: max-width + 100
+  margin: 0 auto
+  background: #fff
+
+.page-contents
+  visibility: visible
+  transition: all .3s ease
+
+.content
+  padding: spacing-block-large 0
+  background: #fff
+
+  @media (max-width: small-screen)
+    padding: spacing-block * 2 0
+
+  ul,
+  ol
+    padding-left: spacing-block
+
+  ul
+    list-style: disc
+    list-style-position: outside
+
+  ol
+    list-style: decimal
+    list-style-position: outside
+    margin-bottom: spacing-block * 2
+
+.no-hero
+
+  .content
+    padding-top: hero-space
+
+    @media(max-width: small-screen)
+      padding-top: spacing-block-large
+
+.section-break
+  margin-bottom: spacing-block-large
+  padding-bottom: spacing-block-large
+  border-bottom: 1px solid light-gray
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: -8px
+    left: 50%
+    margin-left: -25px
+    width: 49px
+    height: 32px
+    background: url('https://mojotech-static.s3.amazonaws.com/m4/approach/evolution.png')
+    background-repeat: no-repeat
+    background-size: contain
+    background-color: white
+    background-position: center
+    padding: 0 12px
+
+  @media(max-width: med-screen-portrait)
+    margin-bottom: spacing-block * 2
+    padding-bottom: spacing-block * 2
+
+  p:last-child
+    margin-bottom: 0
+
+.col-center
+  max-width: center-col-width
+  margin: 0 auto
+
+.callout-block
+  margin: spacing-block-large 0
+  padding: spacing-block-large
+  background-color: light-gray
+  image-rendering: -webkit-optimize-contrast
+  background-repeat: no-repeat
+  background-position: bottom right
+
+  @media (max-width: med-screen-portrait)
+    margin: spacing-block * 2 (-(spacing-block) * 2)
+    padding: spacing-block * 2
+
+  @media (max-width: small-screen)
+    margin: spacing-block * 2 (-(spacing-block))
+    padding: spacing-block * 2 spacing-block
+
+  p:last-child
+    margin-bottom: 0
+
+.callout-copy
+  margin: 0 auto
+  max-width: center-col-width
+
+.waistband
+  max-width: waistband-width
+  width: 80%
+  margin: 0 auto
+
+  @media(max-width: med-screen-landscape)
+    width: auto
+    max-width: center-col-width
+
+.location-intro
+  .intro-copy
+    &:after
+      display: none
+
+.intro-copy
+  margin-bottom: spacing-block-large
+  padding-bottom: spacing-block-large
+  color: darken(med-gray, 40%)
+  position: relative
+
+  &:after
+    position: absolute
+    left: 50%
+    bottom: 0
+    content: ''
+    width: 100px
+    height: 2px
+    background: mojo-green
+    margin-top: -2px
+    margin-left: -50px
+
+    @media(max-width: small-screen)
+      bottom: 0
+
+  @media(max-width: small-screen)
+    margin-bottom: spacing-block * 2
+    padding-bottom: spacing-block * 2
+
+  p
+    font-size: 26px
+    line-height: 42px
+
+    @media(max-width: small-screen)
+      font-size: 20px
+      line-height: 36px
+
+    &:last-child
+      margin-bottom: 0
+
+.location
+  width: col-1-4
+  float: left
+
+  @media (max-width: small-screen)
+    width: 100%
+    float: none
+    margin-bottom: spacing-block
+
+  .location-name,
+  .location-title
+    margin-bottom: 0
+    transition: all .3s ease
+
+  .location-address
+    color: mojo-green
+
+  .location-pic
+    width: 100%
+    padding-bottom: 50%
+    background-size: 100% auto
+    margin-bottom: spacing-block-small
+
+    &:hover
+      background-size: 120% auto
+
+  .location-info
+    display: block
+    border: none
+    position: relative
+
+.get-directions
+  font-size: 12px
+
+.rotate
+  animation: rotate 120s linear infinite
+
+.close-btn
+  position: relative
+
+  &:before,
+  &:after
+    content: ''
+    display: block
+    position: absolute
+    top: 0
+    transform: rotate(45deg)
+
+  &:after
+    transform: rotate(-45deg)
+
+@keyframes slideFade
+  0%
+    opacity: 0
+    transform: translate(20px)
+  50%
+    opacity: 1
+  100%
+    opacity: 1
+    transform: translate(0)
+
+@keyframes fadeIn
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+@keyframes rotate
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+
+@keyframes beat
+  0%, 20%, 40%, 100%
+    transform: scale(.9)
+  30%
+    transform: scale(1)

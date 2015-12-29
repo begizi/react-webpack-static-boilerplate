@@ -1,0 +1,75 @@
+.employees
+  max-width: max-width + spacing-block * 2
+
+  @media (max-width: small-screen)
+    padding: 0 spacing-block-small
+
+.employee
+  width: col-1-4
+  float: left
+  padding: 0 spacing-block
+  margin-bottom: spacing-block * 2
+  transition: outline .3s ease
+
+  @media (max-width: med-screen-landscape)
+    width: col-1-3
+
+  @media (max-width: med-screen-portrait)
+    width: col-1-2
+    padding: 0 spacing-block-small
+    outline: 0 solid mojo-green
+
+  .employee-info
+    transition: all .1s ease
+
+  &:hover
+
+    .employee-info
+      background: mojo-green
+      &:after
+        outline: 20px solid mojo-green
+
+        @media (max-width: small-screen)
+          outline: 10px solid mojo-green
+
+    .employee-name,
+    .employee-title
+      color: #fff
+
+  .employee-name
+    font-size: 18px
+    line-height: 28px
+
+.employee-name,
+.employee-title
+  margin-bottom: 0
+  white-space: nowrap
+  overflow: hidden
+  transition: all .1s ease
+  text-overflow: ellipsis
+  width: 100%
+
+.employee-title
+  color: mojo-green
+
+.employee-pic
+  background: light-gray
+  margin-bottom: spacing-block-small
+
+  img
+    margin: 0
+
+.employee-info
+  display: block
+  border: none
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    width: 100%
+    height: 100%
+    top: 0
+    left: 0
+    transition: all .3s ease
+    outline: 0 solid mojo-green

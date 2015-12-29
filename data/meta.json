@@ -1,0 +1,103 @@
+{
+  "defaults": {
+    "title": "Web Application Development, Mobile App Development",
+    "titleSuffix": " | MojoTech - Providence, New York, Boulder",
+    "description": "We build web and mobile apps for big and soon-to-be-big companies.",
+    "keywords": "web development, web design, app development, boulder, new york, providence"
+  },
+  "approach": {
+    "title": "Our Web & Mobile App Development Approach",
+    "description": "We develop elegant, simple, and flexible solutions to our clients' problems."
+  },
+  "boulder": {
+    "title": "Web Application Development from Boulder, CO",
+    "description": "Web Design & Web Development from Boulder"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Let's build something you'll love."
+  },
+  "contact-form": {
+    "title": "Contact Form",
+    "description": "Tell us about your project."
+  },
+  "jobs": {
+    "title": "Web Design & Development Jobs",
+    "description": "Web Design & Web Development Jobs in Providence, New York, Boulder"
+  },
+  "people": {
+    "title": "People",
+    "description": "Meet our award winning web application development and mobile app development team."
+  },
+  "labs": {
+    "title": "Labs"
+  },
+  "toolkit": {
+    "title": "Brand Toolkit",
+    "description": "Apps, open-source projects, and experiments form the MojoTech team."
+  },
+  "new-york": {
+    "title": "Web Application Development from New York, NY",
+    "description": "Web Design & Web Development from New York"
+  },
+  "nda": {
+    "title": "MojoTech - Mutual NDA",
+    "description": "Let's build something you'll love."
+  },
+  "providence": {
+    "title": "Web Application Development from Providence, RI",
+    "description": "Web Design & Web Development from Providence, RI"
+  },
+  "washington-dc": {
+    "title": "Web Application Development from Washington, DC",
+    "description": "Web Design & Web Development from Washington, DC"
+  },
+  "shots": {
+    "title": "MojoTech - Dribbble Shots",
+    "description": "A Dribbble feed of the most popular shots."
+  },
+  "launch": {
+    "title": "Launch",
+    "description": "Let's build something you'll love."
+  },
+  "work": {
+    "title": "Work",
+    "description": "We build apps that our clients, and their users, love.",
+    "titleSuffix": " Design & Development | MojoTech",
+    "groove": {
+      "title": "Groove",
+      "description": "Building a better experience"
+    },
+    "pinchme": {
+      "title": "PINCHme",
+      "description": "Highly targeted product sampling"
+    },
+    "teespring": {
+      "title": "Teespring",
+      "description": "Selling T-shirts at massive scale"
+    },
+    "riskio": {
+      "title": "Risk I/O",
+      "description": "Fix what matters"
+    },
+    "randomrun": {
+      "title": "RandomRun",
+      "description": "Stop running in the same old circles."
+    },
+    "united-way": {
+      "title": "The United Way of Connecticut",
+      "description": "2-1-1 Childcare - A better childcare referral service"
+    },
+    "dockwa": {
+      "title": "Dockwa",
+      "description": "Mobile reservation management for boaters"
+    },
+    "aetna": {
+      "title": "Aetna - Improving outcomes in accountable care.",
+      "description": "Improving outcomes in accountable care."
+    },
+    "default": {
+      "title": "Project"
+    }
+  }
+}

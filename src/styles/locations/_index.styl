@@ -1,0 +1,57 @@
+.location
+  .location-name
+    font-size: 18px
+
+  address
+    font-size: 13px
+    line-height: normal
+
+@import _hero
+
+.office-location
+
+  .location-intro
+    padding: spacing-block-large 0 spacing-block * 4 0
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: bottom center
+
+    @media(max-width: small-screen)
+      padding-top: spacing-block * 2
+      padding-bottom: 0
+
+  .intro-copy
+    margin-bottom: 0
+
+  .social-intro
+    margin-top: 0
+
+  .twitter-feed,
+  .jobs
+    margin-bottom: spacing-block-large
+    
+    @media(max-width: small-screen)
+      margin-bottom: spacing-block * 2
+    
+  .jobs
+    @media(max-width: small-screen)
+      text-align: center
+      
+  .content
+    padding: 0
+
+.providence
+  .location-intro
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/locations/prov-doodle.jpg')
+
+.new-york
+  .location-intro
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/locations/nyc-doodle.jpg')
+
+.boulder
+  .location-intro
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/locations/boulder-doodle.jpg')
+
+.washington-dc
+  .location-intro
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/locations/dc-doodle.jpg')

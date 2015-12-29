@@ -1,0 +1,70 @@
+.work-items-secondary
+  padding: spacing-block-large 0
+  margin-top: spacing-block-large
+  border-top: 1px solid light-gray
+
+  @media (max-width: small-screen)
+    padding: spacing-block * 2 0
+    margin-top: spacing-block * 2
+
+  .work-items-title
+    color: darken(med-gray, 40%)
+
+.secondary-project
+  display: inline-block
+  vertical-align: top
+  width: col-1-4
+
+  @media(max-width: med-screen-landscape)
+    width: col-1-2
+
+    &:last-child
+      margin-bottom: 0
+
+  @media(max-width: small-screen)
+    width: 100%
+
+  .project-logo
+    margin: 0 0 spacing-block-small 0
+    height: 100px
+
+  .meta-info
+    padding-left: 12px
+    padding-right: spacing-block * 2
+    transition: opacity .3s ease
+    position: relative
+    margin-bottom: spacing-block * 3
+    line-height: normal
+    margin-top: 5px
+
+    &:before
+      position: absolute
+      left: 0
+      top: 7px
+      content: ''
+      width: 4px
+      height: 4px
+      background: mojo-green
+      border-radius: 50%
+
+      @media(max-width: small-screen)
+        top: 10px
+
+  .work-desc
+    font-size: 16px
+    line-height: 26px
+
+  .work-title,
+  .work-desc
+    padding-right: spacing-block * 2
+
+  .work-title
+    margin-bottom: 0
+    font-size: 18px
+
+  .img
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    padding-bottom: 100%
+    margin-bottom: spacing-block-small

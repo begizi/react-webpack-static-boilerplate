@@ -1,0 +1,78 @@
+.work-single
+  .hero
+    background-color: light-gray
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+
+.work-groove
+  .hero
+    video
+      width: auto
+      height: 100%
+      @media(min-width: 1000px) and (max-height: 800px)
+        width: 100%
+        height: auto
+      @media(min-width: 1200px)
+        width: 100%
+        height: auto
+      @media(max-width: small-screen)
+        display: none
+
+    &.overlay
+      &:after
+        background-image: linear-gradient(135deg, rgba(67,214,219,0.8),rgba(6,136,206,0.8))
+
+    @media(max-width: small-screen)
+      background-image: url('https://mojotech-static.s3.amazonaws.com/m4/video/groove/groove-ff.jpg')
+
+.work-pinchme
+  .hero
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/pinchme/pinchme-banner.jpg')
+
+.work-teespring
+  .video-full-bleed
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/video/teespring/teespring-ff.jpg')
+    @media(max-width: small-screen)
+      display: none
+
+  .hero
+    @media(max-width: small-screen)
+      background-image: url('https://mojotech-static.s3.amazonaws.com/m4/video/teespring/teespring-bg.jpg')
+
+    video
+      @media(max-width: small-screen)
+        display: none
+
+.work-riskio
+  .hero
+    padding-bottom: 0
+    background-color: #35495c
+
+.work-randomrun
+  .hero
+    padding-bottom: 0
+    background: #ff4f4f
+
+  .intro-media
+    padding-top: spacing-block * 2
+    margin-bottom: 0
+
+.work-united-way
+  .hero
+    background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/united-way/united-way-hero.jpg')
+    background-position: bottom center
+    padding-bottom: 0
+    background-color: uw-primary
+
+.work-dockwa
+  .hero
+    background-image: url('//mojotech-static.s3.amazonaws.com/m4/work/dockwa/dockwa-hero-bg.jpg')
+    background-position: top center
+    padding-bottom: 0
+    background-color: #1b90ad
+
+.work-aetna
+  .hero
+    background-image: url('//mojotech-static.s3.amazonaws.com/m4/work/aetna/aetna-banner.jpg')
+    background-color: #7E3D97

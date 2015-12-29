@@ -1,0 +1,29 @@
+.meta-info
+  font-family: primary-sans
+  font-size: 12px
+  text-transform: uppercase
+  color: lighten(med-gray, 70%)
+  font-weight: bold
+  letter-spacing: .0325em
+
+  .tag,
+  .timestamp
+    display: inline-block
+    margin-right: spacing-block-small
+
+  .timestamp
+    font-family: primary-serif
+    color: #fff
+    letter-spacing: normal
+    text-transform: capitalize
+
+  .tag
+    position: relative
+    margin-right: 5px
+
+    &:after
+      content: ','
+
+    &:last-child
+      &:after
+        display: none

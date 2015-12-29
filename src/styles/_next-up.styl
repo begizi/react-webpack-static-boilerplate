@@ -1,0 +1,115 @@
+.next-up
+  height: next-up-height
+  text-align: center
+  background-color: mojo-green
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  position: relative
+
+  @media (max-width: small-screen)
+    height: next-up-height-small
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: mojo-green
+    opacity: .9
+    transition: all .3s ease
+
+  &:hover
+    cursor: pointer
+
+    &:after
+      opacity: .75
+
+  .inner
+    position: relative
+    z-index: 10
+    top: 50%
+    transform: translateY(-50%)
+
+  .button
+    margin-top: spacing-block * 2
+
+  .next-up-title,
+  .next-up-subhead
+  .next-up-desc
+    color: #fff
+
+  .next-up-title
+    margin-bottom: 0
+
+    a
+      color: #fff
+      border: none
+
+  .small-headline
+    margin-bottom: spacing-block-small
+    color: rgba(#fff, .5)
+
+  .learn-more
+    font-size: 13px
+    color: rgba(#fff, .9)
+    border-bottom: 2px dotted rgba(#fff, .7)
+    display: inline-block
+    line-height: normal
+
+
+.next-up-approach
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/approach/work-together.jpg')
+
+.next-up-jobs
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/jobs/jobs-hero.jpg')
+
+.next-up-pinchme
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/pinchme/pinchme-banner.jpg')
+  &:after
+    background-color: #61c5bd
+
+.next-up-groove
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/video/groove/groove-ff.jpg')
+  &:after
+    background-color: #3bbec4
+
+.next-up-teespring
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/video/teespring/teespring-bg.jpg')
+  &:after
+    background-color: #40ade4
+
+.next-up-riskio
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/riskio/riskio-nextup.png')
+  &:after
+    background-color: #ed1c37
+
+.next-up-randomrun
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/randomrun/rr-nextup.jpg')
+  &:after
+    background-color: #ff4f4f
+
+.next-up-united-way
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/united-way/united-way-hero.jpg')
+  &:after
+    background-color: uw-primary
+
+.next-up-dockwa
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/work/dockwa/dockwa-nextup.jpg')
+  background-position: top
+  &:after
+    background-color: rgba(#1b90ad, .3)
+
+.next-up-people
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/people/matunuck-conf.jpg')
+
+.next-up-contact
+  background-image: url('https://mojotech-static.s3.amazonaws.com/m4/building-apps-at-mojotech.jpg')
+  background-position: bottom
+
+.next-up-home
+  background: darken(med-gray, 20%)
+  &:after
+    display: none

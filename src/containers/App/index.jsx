@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from 'components/header';
+import Header from 'components/Header';
 
 import 'styles/main.styl';
 
@@ -14,7 +14,9 @@ export default class App extends React.Component {
     return (
       <div>
         <Header />
-        {children}
+        <div className="body-content">
+          {children}
+        </div>
       </div>
     );
   }

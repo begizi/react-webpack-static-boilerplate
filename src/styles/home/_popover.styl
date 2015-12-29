@@ -1,0 +1,40 @@
+.popover-overlay
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: #000
+  opacity: 0.5
+  z-index: 31
+
+.popover-container
+  max-height: 608px
+  max-width: 1080px
+  position: absolute
+  top: 35px
+  left: 50%
+  transform: translateX(-50%)
+  width: 90%
+  z-index: 32
+
+.close-popover
+  position: absolute
+  border-radius: 50%
+  height: 31px
+  right: -15px
+  top: -15px
+  width: 31px
+  box-shadow: 0 3px 3px rgba(0,0,0,0.4)
+  background-color: #28ba00
+  cursor: pointer
+  z-index: 32
+
+.close-btn
+  margin: 14px 6px
+
+  &:before,
+  &:after
+    width: 19px
+    height: 4px
+    background: #fff

@@ -1,0 +1,242 @@
+.contact-form,
+.contact-thanks,
+.modal,
+.single-employee-info
+  .header
+    display: none
+
+.header
+  position: relative
+  top: 100px
+  z-index: 30
+
+  @media(min-width: small-screen)
+    transition: opacity .3s ease
+    backface-visibility: hidden
+
+    &.slideUp
+      opacity: 0
+
+    &.slideDown
+      position: fixed
+      width: 100%
+      z-index: 30
+      opacity: 1
+
+  @media (max-width: small-screen)
+    top: 0
+    position: static
+
+.header-wrap
+
+  @media (max-width: small-screen)
+    color: mojo-green
+    height: header-height
+    margin: 0 auto
+    position: fixed
+    top: 100px
+    left: 0
+    width: 100%
+    z-index: 30
+    max-width: 100%
+    top: 0
+    background: rgba(white, .9)
+
+  .logo
+    margin-top: 3px
+    float: left
+    line-height: header-height
+    opacity: 1
+
+  #mojo-logo
+    transition: cubic-bezier
+    position: absolute
+    z-index: 21
+
+    @media (max-width: small-screen)
+      width: 42px
+
+    &:hover
+      transform: scale(1.2) rotate(5deg)
+
+      #mojo-hex
+        opacity: .95
+
+  #mojo-hex
+    transition: all .3s ease
+    fill: white
+
+    @media (max-width: small-screen)
+      fill: mojo-green
+
+  #mojo-m
+    fill-opacity: 0
+
+    @media(max-width: small-screen)
+      fill-opacity: 1
+
+.menu
+  float: right
+  margin-top: 18px
+  position: relative
+  z-index: 22
+
+  .hamburger
+    width: 24px
+    height: 4px
+    margin: 10px 0
+    background: white
+    position: relative
+    border-radius: 4px
+    transition: cubic-bezier
+
+    &:before,
+    &:after
+      content: ''
+      display: block
+      width: 24px
+      height: 4px
+      background: white
+      position: absolute
+      border-radius: 4px
+      transition: cubic-bezier
+
+    &:before
+      top: -8px
+      right: 0
+      width: 22px
+
+    &:after
+      top: 8px
+      width: 16px
+      right: 0
+
+  @media(max-width: small-screen)
+    .hamburger,
+    .hamburger:before,
+    .hamburger:after
+      background: mojo-green
+
+  &:hover
+    cursor: pointer
+    .hamburger
+      &:before,
+      &:after
+        width: 24px
+
+      &:before
+        top: -10px
+
+      &:after
+        top: 10px
+
+  &.active
+    background: mojo-green
+    border-radius: 50%
+    padding: spacing-block-small
+    position: relative
+    top: -10px
+    right: -10px
+
+    .hamburger
+      background: none
+
+      &:before,
+      &:after
+        top: 0
+        width: 24px
+        transform: rotate(45deg)
+
+      &:after
+        transform: rotate(-45deg)
+
+      &:hover
+        transform: scale(1.2)
+
+.work,
+.approach,
+.shots,
+.mojo,
+.home,
+.contact-thanks,
+.headroom--not-top
+
+  .hamburger,
+  .hamburger:before,
+  .hamburger:after
+    background: mojo-green
+
+  #mojo-hex
+    fill: mojo-green
+    transition: all .3s ease
+
+  #mojo-m
+    fill-opacity: 1
+
+  .header-wrap
+    color: mojo-green
+
+.light-motif,
+.menu-open
+  .hero
+    color: #fff
+
+  .hamburger,
+  .hamburger:before,
+  .hamburger:after
+    background: #fff
+
+  #mojo-hex
+    fill: #fff
+    transition: all .3s ease
+
+  #mojo-m
+    fill-opacity: 0
+
+  #mojo-logo
+    &:hover
+      #mojo-hex
+        fill: #fff
+
+  .header-wrap
+    background: rgba(mojo-green, .9)
+    color: white
+
+.menu-open
+  overflow: hidden
+
+  .header
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: 50
+    transition: none
+
+    @media (max-width: small-screen)
+      top: 0
+      position: static
+
+  #mojo-hex
+    opacity: .5
+
+    @media(max-width: small-screen)
+      opacity: 1
+
+  .header-wrap
+    height: header-height
+    margin: 0 auto
+    position: relative
+    top: 100px
+
+    @media(min-width: small-screen)
+      background: none
+
+    @media(max-width: small-screen)
+      top: 0
+      position: fixed
+      z-index: 30
+
+      .inner
+        padding: 0 spacing-block
